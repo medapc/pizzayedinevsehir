@@ -11,19 +11,19 @@
 </script>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  // Sitedeki telefon butonunu se�iyoruz
+  // Sitedeki telefon butonunu seciyoruz
   const phoneButton = document.querySelector('a[href^="tel:"]');
   
   if (phoneButton) {
     phoneButton.addEventListener("click", function () {
       if (typeof gtag !== "undefined") {
-        // Google Ads global etiketine arama d�n���m�n� bildiriyoruz
+        // Google Ads global etiketine arama donusumunu bildiriyoruz
         gtag('event', 'conversion', {
           'send_to': 'AW-18210517059',
           'event_category': 'Siparis_Hatti',
           'event_label': 'Sabit_Hat_Arama'
         });
-        console.log("D�n���m tetiklendi: Sabit hat aramas� Google Ads'e iletildi.");
+        console.log("Donusum tetiklendi: Sabit hat aramasi Google Ads'e iletildi.");
       }
     });
   }
