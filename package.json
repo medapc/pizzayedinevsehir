@@ -1,0 +1,9 @@
+{
+  "name": "pizzayedinevsehir-live",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs"
+  }
+}
