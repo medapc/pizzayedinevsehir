@@ -3,10 +3,11 @@
   "private": true,
   "version": "0.0.1",
   "scripts": {
+    "build": "node -e \"const fs=require('fs'); if(!fs.existsSync('dist/index.html')) throw new Error('dist/index.html not found'); console.log('Static site ready in dist');\"",
     "dev": "node server.mjs",
     "start": "node server.mjs",
-    "deploy": "wrangler deploy",
-    "preview": "wrangler dev"
+    "deploy": "wrangler pages deploy dist --project-name=pizzayedinevsehir",
+    "preview": "wrangler pages dev dist"
   },
   "devDependencies": {
     "wrangler": "^4.0.0"
