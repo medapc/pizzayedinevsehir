@@ -1,0 +1,127 @@
+<!DOCTYPE html><html lang="tr"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Şikayet Panosu | Pizza Yedi Nevşehir - Nevşehir Pizza</title><meta name="description" content="Pizza Yedi Nevşehir şikayet panosu. Şikayetlerinizi iletin, şikayetiniz 2 iş günü içinde yanıtlanır."><link rel="canonical" href="https://pizzayedinevsehir.com/sikayet-panosu"><meta name="theme-color" content="#C8102E"><link rel="icon" type="image/png" href="/favicon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/_astro/en-iyi-pizza-nevsehir.BbCrTXv0.css">
+<style>@keyframes bounce{0%,to{transform:translateY(0)}50%{transform:translateY(-5px)}}.animate-bounce[data-astro-cid-svshx33u]{animation:bounce .5s ease-in-out 3}
+</style><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18210517059"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18210517059');
+</script></head> <body class="min-h-screen bg-bg text-dark font-sans"> <div class="min-h-screen flex flex-col"> <header id="site-header" class="sticky top-0 z-40 bg-white/95 border-b border-white/70 backdrop-blur-sm transition-shadow duration-300" data-astro-cid-3ef6ksr2> <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8" data-astro-cid-3ef6ksr2> <a href="/" class="flex items-center text-dark group" aria-label="Pizza Yedi Nevşehir Ana Sayfa"><img src="/images/pizza-yedi-logo-cropped.png" alt="Pizza Yedi Nevşehir" style="display:block;width:auto;height:72px;max-width:220px;object-fit:contain;" loading="eager"></a> <nav id="desktop-nav" class="hidden items-center gap-8 md:flex" data-astro-cid-3ef6ksr2> <a href="/" class="nav-link text-sm font-semibold text-dark transition-all hover:text-primary" data-astro-cid-3ef6ksr2>Ana Sayfa</a> <a href="/hakkimizda" class="nav-link text-sm font-semibold text-dark transition-all hover:text-primary" data-astro-cid-3ef6ksr2>Hakkımızda</a> <a href="/menu" class="nav-link text-sm font-semibold text-dark transition-all hover:text-primary" data-astro-cid-3ef6ksr2>Menülerimiz</a> <a href="/iletisim" class="nav-link text-sm font-semibold text-dark transition-all hover:text-primary" data-astro-cid-3ef6ksr2>İletişim</a> <a href="/siparis" class="rounded-full bg-primary px-6 py-2.5 text-sm font-bold text-white shadow-soft transition-all hover:brightness-110 hover:scale-105 active:scale-95" data-astro-cid-3ef6ksr2>
+Sipariş Ver
+</a> </nav> <button id="mobile-menu-button" class="md:hidden rounded-xl border border-gray/20 px-4 py-2 text-sm font-bold text-dark transition hover:bg-gray/5" aria-label="Menüyü aç" data-astro-cid-3ef6ksr2>
+Menü
+</button> </div> <div id="mobile-menu" class="hidden border-t border-gray-100 bg-white/98 px-6 pb-8 md:hidden animate-slide-up" data-astro-cid-3ef6ksr2> <div class="flex flex-col" data-astro-cid-3ef6ksr2> <a href="/" class="nav-link-mobile block py-5 text-base font-semibold text-dark border-b border-gray-50" data-astro-cid-3ef6ksr2>Ana Sayfa</a> <a href="/hakkimizda" class="nav-link-mobile block py-5 text-base font-semibold text-dark border-b border-gray-50" data-astro-cid-3ef6ksr2>Hakkımızda</a> <a href="/menu" class="nav-link-mobile block py-5 text-base font-semibold text-dark border-b border-gray-50" data-astro-cid-3ef6ksr2>Menülerimiz</a> <a href="/iletisim" class="nav-link-mobile block py-5 text-base font-semibold text-dark border-b border-gray-50" data-astro-cid-3ef6ksr2>İletişim</a> <div class="mt-8" data-astro-cid-3ef6ksr2> <a href="/siparis" class="block w-full rounded-2xl bg-primary px-5 py-4 text-center text-base font-bold text-white shadow-lg active:scale-95 transition-transform" data-astro-cid-3ef6ksr2>
+Hemen Sipariş Ver 🚀
+</a> </div> </div> </div> <script type="module">
+    window.addEventListener('DOMContentLoaded', () => {
+      const button = document.getElementById('mobile-menu-button');
+      const menu = document.getElementById('mobile-menu');
+      const header = document.getElementById('site-header');
+      const currentPath = window.location.pathname;
+
+      // --- AKTİF SAYFA İŞARETLEME MANTIĞI ---
+      const navLinks = document.querySelectorAll('.nav-link, .nav-link-mobile');
+      navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        // Eğer linkin href'i mevcut yol ile eşleşiyorsa (Ana sayfa / kontrolü dahil)
+        if (currentPath === href || (currentPath === '' && href === '/')) {
+          link.classList.add('text-primary');
+          // Masaüstü linklerine alt çizgi ekle
+          if(link.classList.contains('nav-link')) {
+            link.classList.add('border-b-2', 'border-primary', 'pb-1');
+          }
+        }
+      });
+
+      // Mobil menü aç/kapat
+      button?.addEventListener('click', () => {
+        menu?.classList.toggle('hidden');
+        button.textContent = menu?.classList.contains('hidden') ? 'Menü' : 'Kapat';
+      });
+
+      // Kaydırma efekti
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 20) {
+          header?.classList.add('shadow-xl', 'bg-white');
+          header?.classList.remove('bg-white/95');
+        } else {
+          header?.classList.remove('shadow-xl', 'bg-white');
+          header?.classList.add('bg-white/95');
+        }
+      });
+    });
+  </script> </header>  <main class="flex-1"> <section class="mx-auto max-w-6xl px-6 py-20 lg:px-8"> <div class="rounded-[32px] bg-white/95 p-10 shadow-soft"> <h1 class="text-4xl font-semibold text-dark">Şikayet Panosu</h1> <p class="mt-4 text-base text-gray leading-8">Şikayetlerinizi bizimle paylaşın. Her mesajı dikkatle inceliyor ve çözüm üretiyoruz.</p> <p class="mt-4 rounded-3xl bg-[#fff6eb] p-5 text-sm text-dark shadow-soft">Şikayetiniz 2 iş günü içinde yanıtlanır.</p> <div class="mt-10"> <div class="contact-form-container" data-astro-cid-svshx33u> <form id="pizza-contact-form" class="space-y-4 rounded-3xl bg-white/95 p-6 shadow-soft border border-[#f0e5de]" data-astro-cid-svshx33u> <div data-astro-cid-svshx33u> <label for="full-name" class="mb-2 block text-sm font-semibold text-dark" data-astro-cid-svshx33u>Ad Soyad</label> <input id="full-name" name="name" type="text" required class="w-full rounded-2xl border border-[#e8ddd4] bg-[#fffdf7] px-4 py-3 text-sm text-dark outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20" data-astro-cid-svshx33u> </div> <div data-astro-cid-svshx33u> <label for="phone" class="mb-2 block text-sm font-semibold text-dark" data-astro-cid-svshx33u>Telefon Numarası</label> <input id="phone" name="phone" type="tel" required class="w-full rounded-2xl border border-[#e8ddd4] bg-[#fffdf7] px-4 py-3 text-sm text-dark outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20" data-astro-cid-svshx33u> </div> <div data-astro-cid-svshx33u> <label for="email" class="mb-2 block text-sm font-semibold text-dark" data-astro-cid-svshx33u>E-posta</label> <input id="email" name="email" type="email" required class="w-full rounded-2xl border border-[#e8ddd4] bg-[#fffdf7] px-4 py-3 text-sm text-dark outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20" data-astro-cid-svshx33u> </div> <div data-astro-cid-svshx33u> <label for="message-type" class="mb-2 block text-sm font-semibold text-dark" data-astro-cid-svshx33u>Mesaj Türü</label> <select id="message-type" name="message-type" class="w-full rounded-2xl border border-[#e8ddd4] bg-[#fffdf7] px-4 py-3 text-sm text-dark outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20" data-astro-cid-svshx33u> <option value="" disabled selected data-astro-cid-svshx33u>Şikayet</option> <option value="İstek" data-astro-cid-svshx33u>İstek</option> <option value="Öneri" data-astro-cid-svshx33u>Öneri</option> <option value="Bilgi" data-astro-cid-svshx33u>Bilgi</option> <option value="Şikayet" data-astro-cid-svshx33u>Şikayet</option> </select> </div> <div data-astro-cid-svshx33u> <label for="message" class="mb-2 block text-sm font-semibold text-dark" data-astro-cid-svshx33u>Mesajınızı buraya yazınız</label> <textarea id="message" name="message" required minlength="10" rows="5" class="w-full rounded-2xl border border-[#e8ddd4] bg-[#fffdf7] px-4 py-3 text-sm text-dark outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20" data-astro-cid-svshx33u></textarea> </div> <button type="submit" id="submit-button" class="w-full rounded-full bg-primary px-5 py-4 text-sm font-bold text-white transition-all hover:brightness-110 active:scale-95 shadow-md" data-astro-cid-svshx33u> Gönder </button> <p id="form-result" class="mt-4 hidden text-center text-sm font-bold" data-astro-cid-svshx33u></p> </form> </div> <script>
+  const contactForm = document.getElementById('pizza-contact-form');
+  const resultText = document.getElementById('form-result');
+  const submitBtn = document.getElementById('submit-button');
+
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Gönderim başladığında butonu kilitle
+    submitBtn.disabled = true;
+    submitBtn.innerText = "Gönderiliyor...";
+    resultText.classList.add('hidden');
+
+    const formData = new FormData(contactForm);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    try {
+      const response = await fetch('https://pizza-mesaj-kaydedici.medapc.workers.dev/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: json
+      });
+
+      const result = await response.json();
+
+      if (response.status === 200) {
+        resultText.innerText = "✅ Mesajınız başarıyla iletildi!";
+        resultText.className = "mt-4 text-center text-sm font-bold text-green-600 block animate-bounce";
+        contactForm.reset();
+      } else {
+        throw new Error();
+      }
+    } catch (error) {
+      resultText.innerText = "❌ Bir hata oluştu. Lütfen tekrar deneyin.";
+      resultText.className = "mt-4 text-center text-sm font-bold text-red-600 block";
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.innerText = "{submitLabel}";
+      
+      // Mesajı 5 saniye sonra gizle
+      setTimeout(() => {
+        resultText.classList.add('hidden');
+      }, 5000);
+    }
+  });
+</script>  </div> </div> </section> </main> <footer class="border-t border-[#f5efe5] bg-white/95 text-sm text-gray"> <div class="mx-auto max-w-7xl px-6 py-8 lg:px-8"> <div class="flex flex-wrap items-center gap-3 text-sm text-dark"> <a href="/sikayet-panosu" class="hover:text-primary">Şikayet Panosu</a> <a href="/kvkk" class="hover:text-primary">KVKK</a> <a href="/cerez-aydinlatma" class="hover:text-primary">Çerez Aydınlatma</a> <a href="/tedarikciLerimiz" class="hover:text-primary">Tedarikçilerimiz</a> <a href="#" id="helal-belgesi-link" class="hover:text-primary">Helal Belgesi</a> <a href="https://www.google.com/maps/search/2000+Evler+Mah.+%C5%9Eehit+Musa+Ta%C5%9Fdemir+Sk.+No%3A15+50300+Nev%C5%9Fehir" target="_blank" rel="noopener noreferrer" class="hover:text-primary">Konum</a> <a href="tel:03842131213" class="hover:text-primary">Tel: (0384) 213 1213</a> </div> <div class="mt-6 text-gray text-xs">
+© 2024 Pizza Yedi Nevşehir. Tüm hakları saklıdır. | 2000 Evler Mah. Şehit Musa Taşdemir Sk. No:15, 50300 Nevşehir
+</div> </div> <div id="helal-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/40 px-4 py-6"> <div class="w-full max-w-lg rounded-3xl bg-white p-6 shadow-soft"> <h2 class="text-xl font-semibold text-dark">Helal Belgemiz</h2> <p class="mt-4 text-gray">Helal Belgemiz için bizi arayınız: (0384) 213 1213</p> <button id="helal-modal-close" class="mt-6 rounded-full bg-primary px-5 py-3 text-white transition hover:bg-primary-dark">Kapat</button> </div> </div> <script type="module">
+    window.addEventListener('DOMContentLoaded', () => {
+      const link = document.getElementById('helal-belgesi-link');
+      const modal = document.getElementById('helal-modal');
+      const close = document.getElementById('helal-modal-close');
+      link?.addEventListener('click', (event) => {
+        event.preventDefault();
+        modal?.classList.remove('hidden');
+        modal?.classList.add('flex');
+      });
+      close?.addEventListener('click', () => {
+        modal?.classList.add('hidden');
+        modal?.classList.remove('flex');
+      });
+      modal?.addEventListener('click', (event) => {
+        if (event.target === modal) {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }
+      });
+    });
+  </script> </footer> <a href="tel:03842131213" class="fixed bottom-6 left-6 z-50 bg-[#8b0003] hover:bg-[#a31a1a] text-white rounded-full p-4 shadow-lg flex items-center gap-2 transition-all duration-300 hover:scale-110" aria-label="Telefon ile arama"> <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"> <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 22 2 13.93 2 4.5A1 1 0 013 3.5h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"></path> </svg> <span class="hidden sm:inline font-medium text-white">Ara</span> </a> <a href="https://wa.me/903842131213?text=Merhaba%20Pizza%20Yedi%2C%20sipari%C5%9F%20vermek%20istiyorum.%20G%C3%BCncel%20men%C3%BCn%C3%BCz%C3%BC%20payla%C5%9Fabilir%20misiniz%3F" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-[60] bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg flex items-center gap-2 transition-all duration-300 hover:scale-110" aria-label="WhatsApp ile iletişim"> <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"> <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path> </svg> <span class="hidden sm:inline font-medium text-white">Sipariş Ver</span> </a> </div>  </body> </html>
