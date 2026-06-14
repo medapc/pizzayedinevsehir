@@ -75,32 +75,46 @@ Hemen Sipariş Ver 🚀
       const buttons = document.querySelectorAll('.category-tab');
       const panels = document.querySelectorAll('.category-panel');
 
+      const activatePanel = (target) => {
+        if (!target) return;
+
+        buttons.forEach((btn) => {
+          btn.classList.remove('text-[#8B0000]', 'border-[#8B0000]', 'border-b-4');
+          btn.classList.add('text-dark', 'border-[#ece3db]');
+          btn.classList.remove('bg-primary', 'text-white');
+        });
+
+        const activeButton = document.querySelector(`.category-tab[data-target="${target}"]`);
+        activeButton?.classList.add('text-[#8B0000]', 'border-[#8B0000]', 'border-b-4');
+        activeButton?.classList.remove('text-dark', 'border-[#ece3db]');
+
+        panels.forEach((panel) => {
+          panel.classList.toggle('hidden', panel.id !== target);
+        });
+      };
+
+      const revealHashTarget = () => {
+        const hash = decodeURIComponent(window.location.hash.slice(1));
+        if (!hash) return;
+
+        const targetElement = document.getElementById(hash);
+        const targetPanel = targetElement?.closest('.category-panel');
+        if (!targetPanel) return;
+
+        activatePanel(targetPanel.id);
+        window.requestAnimationFrame(() => {
+          targetElement.scrollIntoView({ block: 'center' });
+        });
+      };
+
       buttons.forEach((button) => {
         button.addEventListener('click', () => {
-          const target = button.getAttribute('data-target');
-
-          // Tüm butonları eski haline getir (Beyaz arka plan, koyu yazı)
-          buttons.forEach((btn) => {
-            btn.classList.remove('text-[#8B0000]', 'border-[#8B0000]', 'border-b-4');
-            btn.classList.add('text-dark', 'border-[#ece3db]');
-            // bg-primary veya text-white varsa temizle
-            btn.classList.remove('bg-primary', 'text-white');
-          });
-
-          // Tıklanan butonu aktif yap (Koyu kırmızı yazı ve alt çizgi)
-          button.classList.add('text-[#8B0000]', 'border-[#8B0000]', 'border-b-4');
-          button.classList.remove('text-dark', 'border-[#ece3db]');
-
-          // Panelleri göster/gizle
-          panels.forEach((panel) => {
-            if (panel.id === target) {
-              panel.classList.remove('hidden');
-            } else {
-              panel.classList.add('hidden');
-            }
-          });
+          activatePanel(button.getAttribute('data-target'));
         });
       });
+
+      revealHashTarget();
+      window.addEventListener('hashchange', revealHashTarget);
     });
   </script> </main> <footer class="border-t border-[#f5efe5] bg-white/95 text-sm text-gray"> <div class="mx-auto max-w-7xl px-6 py-8 lg:px-8"> <div class="flex flex-wrap items-center gap-3 text-sm text-dark"> <a href="/sikayet-panosu" class="hover:text-primary">Şikayet Panosu</a> <a href="/kvkk" class="hover:text-primary">KVKK</a> <a href="/cerez-aydinlatma" class="hover:text-primary">Çerez Aydınlatma</a> <a href="/tedarikciLerimiz" class="hover:text-primary">Tedarikçilerimiz</a> <a href="#" id="helal-belgesi-link" class="hover:text-primary">Helal Belgesi</a> <a href="https://www.google.com/maps/search/2000+Evler+Mah.+%C5%9Eehit+Musa+Ta%C5%9Fdemir+Sk.+No%3A15+50300+Nev%C5%9Fehir" target="_blank" rel="noopener noreferrer" class="hover:text-primary">Konum</a> <a href="tel:03842131213" class="hover:text-primary">Tel: (0384) 213 1213</a> </div> <div class="mt-6 text-gray text-xs">
 © 2024 Pizza Yedi Nevşehir. Tüm hakları saklıdır. | 2000 Evler Mah. Şehit Musa Taşdemir Sk. No:15, 50300 Nevşehir
